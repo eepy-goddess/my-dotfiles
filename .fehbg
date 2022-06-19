@@ -1,2 +1,3 @@
 #!/bin/sh
+#link to background image: https://media.discordapp.net/attachments/848349994082893884/988189841235787887/kanade.png?width=1191&height=671
 feh --no-fehbg --bg-scale '/home/a_weeb_programmer/kanade.png' 
