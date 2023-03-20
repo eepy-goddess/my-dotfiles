@@ -13,21 +13,18 @@
     "modules-right": ["pulseaudio","backlight","temperature","cpu","clock","battery","tray"],
     "modules-center": ["custom/waybar-mpris"],
 
-    "custom/waybar-mpris": {
+"custom/waybar-mpris": {
     "return-type": "json",
-    "exec": "$HOME/.config/waybar/waybar-mpris --position --autofocus",
-    "on-click": "$HOME/.config/waybar/waybar-mpris --send toggle",
+    "exec": "$HOME/.config/waybar/NekoMC --hook-waybar",
+    "on-click": "$HOME/.config/waybar/NekoMC --toggle",
     // This option will switch between players on right click.
-        "on-click-right": "$HOME/.config/waybar/waybar-mpris --send player-next",
     // The options below will switch the selected player on scroll
-         "on-scroll-up": "$HOME/.config/waybar/waybar-mpris --send player-next",
-         "on-scroll-down": "$HOME/.config/waybar/waybar-mpris --send player-prev",
     // The options below will go to next/previous track on scroll
         //"on-scroll-up": "waybar-mpris --send next",
         // "on-scroll-down": "waybar-mpris --send prev",
     "escape": true,
 },
-"user": {
+    "user": {
         "format": "{user}",
         "interval": 60,
         "height": 30,
